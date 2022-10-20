@@ -150,5 +150,5 @@ elif color == "colores":
 else:
 	print("El color escrito no es valido, escribe colores como argumento para saber los posobles colores")
 ```
-### Segunda versiòn 
+### Segunda versión 
 
