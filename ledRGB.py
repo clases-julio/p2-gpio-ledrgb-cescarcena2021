@@ -11,17 +11,19 @@ rojoPin = 11
 azulPin = 13
 verdePin = 15
 
-#------Funciones para configurar los colores------#
+#------Funciones para configurar los ordenes------#
 
 def encender(pin):
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(pin, GPIO.OUT)
     GPIO.output(pin, GPIO.LOW)
+    GPIO.setwarnings(False)
     
 def apagar(pin):
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(pin, GPIO.OUT)
     GPIO.output(pin, GPIO.HIGH)
+    GPIO.setwarnings(False)
     
 def encenderRojo():
     encender(rojoPin)
@@ -60,45 +62,48 @@ def encenderBlanco():
     
 #-----Zona de declaracion de variables------#
     
-color = input("Escoge un color para encender el LED...\n")
-mensaje = "Pulsa enter si quieres apagar el led "
+orden = input("Escoge una orden para que se ejecute en el LED...\n")
+true = True
 
 #----------Main-----------#
+while true:
 
-if color == "rojo":
-	encenderRojo()
-	input(mensaje) 
-	GPIO.cleanup ()
-elif color == "verde":
-	encenderVerde()
-	input(mensaje) 
-	GPIO.cleanup ()
-elif color == "azul":
-	encenderAzul()
-	input(mensaje) 
-	GPIO.cleanup ()
-elif color == "magenta":
-	encenderMagenta()
-	input(mensaje) 
-	GPIO.cleanup ()
-elif color == "cyan":
-	encenderCyan()
-	input(mensaje) 
-	GPIO.cleanup ()
-elif color == "amarillo":
-	encenderAmarillo()
-	input(mensaje) 
-	GPIO.cleanup ()
-elif color == "blanco":
-	encenderBlanco()
-	input(mensaje) 
-	GPIO.cleanup ()
+	if orden == "encender rojo":
+		encenderRojo() 
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+	elif orden == "encender verde":
+		encenderVerde()
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+	elif orden == "encender azul":
+		encenderAzul()
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+	if orden == "apagar rojo":
+		apagarRojo()
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+	elif orden == "apagar verde":
+		apagarVerde()
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+	elif orden == "apagar azul":
+		apagarAzul()
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+	elif orden == "apagar todo":
+		apagarAzul()
+		apagarRojo()
+		apagarVerde()
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+		
+	elif orden == "ordenes":
+		print("Las ordenes que puede reproducir este led son:\n encenedr rojo\n encender verde\n encender azul\n apagar rojo\n apagar verde\n apagar azul\n apagar todo\n salir\n")
+		orden = input("Escoge una orden para que se ejecute en el LED...\n")
+		
+	elif orden == "salir":
+		true = False
+		
+	else:
+
+		print("La orden escrita no es valida, escribe ordenes como argumento para saber las posobles ordenes")
+		break
 	
-elif color == "colores":
-	print("Los colores que puede reproducir este led son: rojo\n verde\n azul\n magenta\n cyan\n amarillo\n blanco\n")
-
-else:
-	print("El color escrito no es valido, escribe colores como argumento para saber los posobles colores")
 
 
 
