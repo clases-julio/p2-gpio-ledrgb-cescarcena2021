@@ -150,6 +150,13 @@ elif color == "colores":
 else:
 	print("El color escrito no es valido, escribe colores como argumento para saber los posobles colores")
 ```
+Imágenes de demostracion de algunos de los colores y de la interface de usuario 
+![Imagen del diagrama de clases sin terminar aun](https://github.com/clases-julio/p2-gpio-ledrgb-cescarcena2021/blob/main/src/img/Imagen1.jpeg)
+Imagen del punto de vista del usuário
+![Imagen del diagrama de clases sin terminar aun](https://github.com/clases-julio/p2-gpio-ledrgb-cescarcena2021/blob/main/src/img/Imagen2.jpeg)
+Imagen del led endendido en color Amarillo
+![Imagen del diagrama de clases sin terminar aun](https://github.com/clases-julio/p2-gpio-ledrgb-cescarcena2021/blob/main/src/img/Imagen3.jpeg)
+Imagen del led endendido en color Magenta
 ### Segunda versión 
 
 En esta segunda versión realizaremos el mismo estilo de interface para el usuario, pero esta vez en ver de que este escoja el color del que desea que se enecienda el led, escogerá el la orden concreta que quiere que el led realice. Es decir, este puede escoger esntre encender el color rojo, apagrlo, encender el color verde, apagarlo...
