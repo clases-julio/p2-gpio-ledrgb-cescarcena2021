@@ -49,9 +49,9 @@ while True:   #bucle while para que se que encienda todo el rato
     
 return
 ``` 
-## Elaboración de nuestro codigo 
+## Elaboración de nuestro código 
 En primer lugar nos dimos cuenta de que con el *while true* del codigo no funciona, asique lo eliminamos y decidimos elaboara mas funciones para encender nuevos colores como Magenta, Cyan, Verde, Azul, Amarillo, Blanco...
-También hicimos varios *if's* simulando un *switch case* para que el usuario tubiera la opciòn de escoger el color que el quiera y que también pueda apagar el led cuando quiera
+También hicimos varios *if's* simulando un *switch case* para que el usuario tubiera la opción de escoger el color que él quiera y que también pueda apagar el led cuando quiera
 ### Primera versión 
 ```python 
 import time, sys
