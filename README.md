@@ -150,11 +150,12 @@ elif color == "colores":
 else:
 	print("El color escrito no es valido, escribe colores como argumento para saber los posobles colores")
 ```
-###Imágenes de demostracón de algunos de los colores y de la interface de usuario:
+### Imágenes de demostracón de algunos de los colores y de la interface de usuario:
 ![Imagen del led encendido de Magenta](https://github.com/clases-julio/p2-gpio-ledrgb-cescarcena2021/blob/main/src/img/Imagen1.jpeg)
 Imagen del punto de vista del usuario encendiendo el color Magenta, ademas se muetra en el monitor lo que este ve.
 ![Imagen del led encendido de Amarillo](https://github.com/clases-julio/p2-gpio-ledrgb-cescarcena2021/blob/main/src/img/Imagen2.jpeg)
 Imagen del led endendido en color Amarillo
+
 ![Link de un video de la vista del usuario](https://github.com/clases-julio/p2-gpio-ledrgb-cescarcena2021/blob/main/src/img/Video.mp4)
 
 ### Segunda versión 
