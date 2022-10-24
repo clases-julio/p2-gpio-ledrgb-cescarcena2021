@@ -152,3 +152,6 @@ else:
 ```
 ### Segunda versión 
 
+En esta segunda versión realizaremos el mismo estilo de interface para el usuario, pero esta vez en ver de que este escoja el color del que desea que se enecienda el led, escogerá el la orden concreta que quiere que el led realice. Es decir, este puede escoger esntre encender el color rojo, apagrlo, encender el color verde, apagarlo...
+
+
